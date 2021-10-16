@@ -1,1 +1,1 @@
-# dhyan-os
+# Dhyan-OS
