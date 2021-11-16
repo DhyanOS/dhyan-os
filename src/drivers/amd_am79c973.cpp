@@ -31,7 +31,7 @@ void printf(char *);
 void printfHex(uint8_t);
 
 amd_am79c973::amd_am79c973(PeripheralComponentInterconnectDeviceDescriptor *dev, InterruptManager *interrupts)
-    : Driver(),
+    :Driver(),
       InterruptHandler(interrupts, dev->interrupt + interrupts->HardwareInterruptOffset()),
       MACAddress0Port(dev->portBase),
       MACAddress2Port(dev->portBase + 0x02),
